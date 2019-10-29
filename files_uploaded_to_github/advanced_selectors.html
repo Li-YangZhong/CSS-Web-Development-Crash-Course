@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * { /*select all elements*/
+            font-size: 1.0em;
+            color: green;
+            font-weight: bold;
+        }
+        #Div1 * { /*select all elements under #Div1*/
+            background-color: yellow;
+        }
+
+        #Div1 > p { /*select direct children of #Div1*/
+            background-color:blue;
+            color: white;
+        }
+        h2 + h3 { /*selecting an adjacent element*/
+            font-size: 2.0em;
+        }
+    </style>
+</head>
+<body>
+    <div id="Div1">
+        <div>1</div>
+        <div>2</div>
+        <div>3 <p>random text</p></div>
+        <p>
+            P
+            <div>P1</div>
+            <div>P2</div>
+        </p>
+    </div>
+    <p>Paragraph Text</p>
+
+    <a href="#">Link</a>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+
+</body>
+</html>
